@@ -1,0 +1,341 @@
+Testing quay.io/quarkus-super-heroes/rest-heroes:native-latest
+
+
+   ___                   _                ____                        _
+  / _ \ _   _  __ _ _ __| | ___   _ ___  / ___| _   _ _ __   ___ _ __| |__   ___ _ __ ___   ___  ___
+ | | | | | | |/ _` | '__| |/ / | | / __| \___ \| | | | '_ \ / _ \ '__| '_ \ / _ \ '__/ _ \ / _ \/ __|
+ | |_| | |_| | (_| | |  |   <| |_| \__ \  ___) | |_| | |_) |  __/ |  | | | |  __/ | | (_) |  __/\__ \
+  \__\_\\__,_|\__,_|_|  |_|\_\\__,_|___/ |____/ \__,_| .__/ \___|_|  |_| |_|\___|_|  \___/ \___||___/
+  _   _                                              |_|
+ | | | | ___ _ __ ___   ___  ___
+ | |_| |/ _ \ '__/ _ \ / _ \/ __|
+ |  _  |  __/ | | (_) |  __/\__ \
+ |_| |_|\___|_|  \___/ \___||___/
+
+
+                                                                            Powered by Quarkus 3.17.2
+21:33:54 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.ru.co.ConfigRecorder] (main) Build time property cannot be changed at runtime:
+ - %prod.quarkus.hibernate-orm.sql-load-script is set to 'no-file' but it is build time fixed to 'import.sql'. Did you change the property %prod.quarkus.hibernate-orm.sql-load-script after building the application?
+21:33:54 INFO  traceId=, parentId=, spanId=, sampled= [or.hi.re.pr.im.ReactiveIntegrator] (JPA Startup Thread) HR000001: Hibernate Reactive
+21:33:54 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@73b9ff08; Operation:Query.
+21:33:54 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@5910cc12; Failure: null.
+21:33:54 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@4db0382a; Operation:Query.
+21:33:54 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@422ad56a; Failure: null.
+21:33:54 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@60025f14; Operation:Query.
+21:33:54 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@6d61028f; Failure: null.
+21:33:54 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.hi.or.ru.se.QuarkusRuntimeInitDialectFactory] (JPA Startup Thread) Persistence unit default-reactive: Could not retrieve the database version to check it is at least 12.0.0
+21:33:54 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) rest-heroes 1.0 native (powered by Quarkus 3.17.2) started in 0.091s. Listening on: http://0.0.0.0:8083
+21:33:54 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) Profile prod activated. 
+21:33:54 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) Installed features: [cdi, config-yaml, hibernate-orm, hibernate-reactive, hibernate-reactive-panache, hibernate-validator, kubernetes, micrometer, opentelemetry, qute, reactive-pg-client, rest, rest-jackson, rest-qute, smallrye-context-propagation, smallrye-health, smallrye-openapi, swagger-ui, vertx]
+2024-12-11 16:33:54.70215105 -0500
+2024-12-11 16:33:54.820427697
+First Response Time in ms: 118
+Footprint in MB:        : 104
+eeff6905952a1dbf8e164b26e7c56a201a60a0f3e59a8103a0d7bc7e0093c042
+eeff6905952a1dbf8e164b26e7c56a201a60a0f3e59a8103a0d7bc7e0093c042
+
+
+   ___                   _                ____                        _
+  / _ \ _   _  __ _ _ __| | ___   _ ___  / ___| _   _ _ __   ___ _ __| |__   ___ _ __ ___   ___  ___
+ | | | | | | |/ _` | '__| |/ / | | / __| \___ \| | | | '_ \ / _ \ '__| '_ \ / _ \ '__/ _ \ / _ \/ __|
+ | |_| | |_| | (_| | |  |   <| |_| \__ \  ___) | |_| | |_) |  __/ |  | | | |  __/ | | (_) |  __/\__ \
+  \__\_\\__,_|\__,_|_|  |_|\_\\__,_|___/ |____/ \__,_| .__/ \___|_|  |_| |_|\___|_|  \___/ \___||___/
+  _   _                                              |_|
+ | | | | ___ _ __ ___   ___  ___
+ | |_| |/ _ \ '__/ _ \ / _ \/ __|
+ |  _  |  __/ | | (_) |  __/\__ \
+ |_| |_|\___|_|  \___/ \___||___/
+
+
+                                                                            Powered by Quarkus 3.17.2
+21:34:07 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.ru.co.ConfigRecorder] (main) Build time property cannot be changed at runtime:
+ - %prod.quarkus.hibernate-orm.sql-load-script is set to 'no-file' but it is build time fixed to 'import.sql'. Did you change the property %prod.quarkus.hibernate-orm.sql-load-script after building the application?
+21:34:07 INFO  traceId=, parentId=, spanId=, sampled= [or.hi.re.pr.im.ReactiveIntegrator] (JPA Startup Thread) HR000001: Hibernate Reactive
+21:34:07 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@1d51d389; Operation:Query.
+21:34:07 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@55b75f06; Failure: null.
+21:34:07 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@695ac317; Operation:Query.
+21:34:07 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@536c65b4; Failure: null.
+21:34:07 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@6f9eec8e; Operation:Query.
+21:34:07 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@509ec654; Failure: null.
+21:34:07 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.hi.or.ru.se.QuarkusRuntimeInitDialectFactory] (JPA Startup Thread) Persistence unit default-reactive: Could not retrieve the database version to check it is at least 12.0.0
+21:34:07 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) rest-heroes 1.0 native (powered by Quarkus 3.17.2) started in 0.091s. Listening on: http://0.0.0.0:8083
+21:34:07 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) Profile prod activated. 
+21:34:07 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) Installed features: [cdi, config-yaml, hibernate-orm, hibernate-reactive, hibernate-reactive-panache, hibernate-validator, kubernetes, micrometer, opentelemetry, qute, reactive-pg-client, rest, rest-jackson, rest-qute, smallrye-context-propagation, smallrye-health, smallrye-openapi, swagger-ui, vertx]
+2024-12-11 16:34:07.615720493 -0500
+2024-12-11 16:34:07.737123466
+First Response Time in ms: 122
+Footprint in MB:        : 106
+155440429b4deba03998bda470ee516b3ea1fd444acfebcb1e04b429d2a5d548
+155440429b4deba03998bda470ee516b3ea1fd444acfebcb1e04b429d2a5d548
+
+
+   ___                   _                ____                        _
+  / _ \ _   _  __ _ _ __| | ___   _ ___  / ___| _   _ _ __   ___ _ __| |__   ___ _ __ ___   ___  ___
+ | | | | | | |/ _` | '__| |/ / | | / __| \___ \| | | | '_ \ / _ \ '__| '_ \ / _ \ '__/ _ \ / _ \/ __|
+ | |_| | |_| | (_| | |  |   <| |_| \__ \  ___) | |_| | |_) |  __/ |  | | | |  __/ | | (_) |  __/\__ \
+  \__\_\\__,_|\__,_|_|  |_|\_\\__,_|___/ |____/ \__,_| .__/ \___|_|  |_| |_|\___|_|  \___/ \___||___/
+  _   _                                              |_|
+ | | | | ___ _ __ ___   ___  ___
+ | |_| |/ _ \ '__/ _ \ / _ \/ __|
+ |  _  |  __/ | | (_) |  __/\__ \
+ |_| |_|\___|_|  \___/ \___||___/
+
+
+                                                                            Powered by Quarkus 3.17.2
+21:34:20 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.ru.co.ConfigRecorder] (main) Build time property cannot be changed at runtime:
+ - %prod.quarkus.hibernate-orm.sql-load-script is set to 'no-file' but it is build time fixed to 'import.sql'. Did you change the property %prod.quarkus.hibernate-orm.sql-load-script after building the application?
+21:34:20 INFO  traceId=, parentId=, spanId=, sampled= [or.hi.re.pr.im.ReactiveIntegrator] (JPA Startup Thread) HR000001: Hibernate Reactive
+21:34:20 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@1148a17b; Operation:Query.
+21:34:20 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@5cb145ee; Failure: null.
+21:34:20 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@2ef408c6; Operation:Query.
+21:34:20 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@2718bff5; Failure: null.
+21:34:20 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@1e5248c5; Operation:Query.
+21:34:20 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@32dfa390; Failure: null.
+21:34:20 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.hi.or.ru.se.QuarkusRuntimeInitDialectFactory] (JPA Startup Thread) Persistence unit default-reactive: Could not retrieve the database version to check it is at least 12.0.0
+21:34:20 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) rest-heroes 1.0 native (powered by Quarkus 3.17.2) started in 0.090s. Listening on: http://0.0.0.0:8083
+21:34:20 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) Profile prod activated. 
+21:34:20 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) Installed features: [cdi, config-yaml, hibernate-orm, hibernate-reactive, hibernate-reactive-panache, hibernate-validator, kubernetes, micrometer, opentelemetry, qute, reactive-pg-client, rest, rest-jackson, rest-qute, smallrye-context-propagation, smallrye-health, smallrye-openapi, swagger-ui, vertx]
+2024-12-11 16:34:20.557142219 -0500
+2024-12-11 16:34:20.677679314
+First Response Time in ms: 120
+Footprint in MB:        : 102
+d11b9ad7da1615b6a7c53ae515aa4dbf3e3ae4ddba1089e1e5ab2a9d96bb1d0a
+d11b9ad7da1615b6a7c53ae515aa4dbf3e3ae4ddba1089e1e5ab2a9d96bb1d0a
+
+
+   ___                   _                ____                        _
+  / _ \ _   _  __ _ _ __| | ___   _ ___  / ___| _   _ _ __   ___ _ __| |__   ___ _ __ ___   ___  ___
+ | | | | | | |/ _` | '__| |/ / | | / __| \___ \| | | | '_ \ / _ \ '__| '_ \ / _ \ '__/ _ \ / _ \/ __|
+ | |_| | |_| | (_| | |  |   <| |_| \__ \  ___) | |_| | |_) |  __/ |  | | | |  __/ | | (_) |  __/\__ \
+  \__\_\\__,_|\__,_|_|  |_|\_\\__,_|___/ |____/ \__,_| .__/ \___|_|  |_| |_|\___|_|  \___/ \___||___/
+  _   _                                              |_|
+ | | | | ___ _ __ ___   ___  ___
+ | |_| |/ _ \ '__/ _ \ / _ \/ __|
+ |  _  |  __/ | | (_) |  __/\__ \
+ |_| |_|\___|_|  \___/ \___||___/
+
+
+                                                                            Powered by Quarkus 3.17.2
+21:34:33 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.ru.co.ConfigRecorder] (main) Build time property cannot be changed at runtime:
+ - %prod.quarkus.hibernate-orm.sql-load-script is set to 'no-file' but it is build time fixed to 'import.sql'. Did you change the property %prod.quarkus.hibernate-orm.sql-load-script after building the application?
+21:34:33 INFO  traceId=, parentId=, spanId=, sampled= [or.hi.re.pr.im.ReactiveIntegrator] (JPA Startup Thread) HR000001: Hibernate Reactive
+21:34:33 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@2bb05ea7; Operation:Query.
+21:34:33 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@dcd3c90; Failure: null.
+21:34:33 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@6e3ff1e1; Operation:Query.
+21:34:33 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@1c2602b6; Failure: null.
+21:34:33 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@c26db4a; Operation:Query.
+21:34:33 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@3377a20d; Failure: null.
+21:34:33 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.hi.or.ru.se.QuarkusRuntimeInitDialectFactory] (JPA Startup Thread) Persistence unit default-reactive: Could not retrieve the database version to check it is at least 12.0.0
+21:34:33 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) rest-heroes 1.0 native (powered by Quarkus 3.17.2) started in 0.091s. Listening on: http://0.0.0.0:8083
+21:34:33 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) Profile prod activated. 
+21:34:33 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) Installed features: [cdi, config-yaml, hibernate-orm, hibernate-reactive, hibernate-reactive-panache, hibernate-validator, kubernetes, micrometer, opentelemetry, qute, reactive-pg-client, rest, rest-jackson, rest-qute, smallrye-context-propagation, smallrye-health, smallrye-openapi, swagger-ui, vertx]
+2024-12-11 16:34:33.475907123 -0500
+2024-12-11 16:34:33.595267794
+First Response Time in ms: 120
+Footprint in MB:        : 110
+e346f030a4420279ac8a5190d8b37e10adcf611a466560bd0d046e592233483e
+e346f030a4420279ac8a5190d8b37e10adcf611a466560bd0d046e592233483e
+
+
+   ___                   _                ____                        _
+  / _ \ _   _  __ _ _ __| | ___   _ ___  / ___| _   _ _ __   ___ _ __| |__   ___ _ __ ___   ___  ___
+ | | | | | | |/ _` | '__| |/ / | | / __| \___ \| | | | '_ \ / _ \ '__| '_ \ / _ \ '__/ _ \ / _ \/ __|
+ | |_| | |_| | (_| | |  |   <| |_| \__ \  ___) | |_| | |_) |  __/ |  | | | |  __/ | | (_) |  __/\__ \
+  \__\_\\__,_|\__,_|_|  |_|\_\\__,_|___/ |____/ \__,_| .__/ \___|_|  |_| |_|\___|_|  \___/ \___||___/
+  _   _                                              |_|
+ | | | | ___ _ __ ___   ___  ___
+ | |_| |/ _ \ '__/ _ \ / _ \/ __|
+ |  _  |  __/ | | (_) |  __/\__ \
+ |_| |_|\___|_|  \___/ \___||___/
+
+
+                                                                            Powered by Quarkus 3.17.2
+21:34:46 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.ru.co.ConfigRecorder] (main) Build time property cannot be changed at runtime:
+ - %prod.quarkus.hibernate-orm.sql-load-script is set to 'no-file' but it is build time fixed to 'import.sql'. Did you change the property %prod.quarkus.hibernate-orm.sql-load-script after building the application?
+21:34:46 INFO  traceId=, parentId=, spanId=, sampled= [or.hi.re.pr.im.ReactiveIntegrator] (JPA Startup Thread) HR000001: Hibernate Reactive
+21:34:46 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@6c553e6b; Operation:Query.
+21:34:46 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@f86f385; Failure: null.
+21:34:46 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@76a759d2; Operation:Query.
+21:34:46 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@59e6f505; Failure: null.
+21:34:46 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@7a98a6bc; Operation:Query.
+21:34:46 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@5cd3d01a; Failure: null.
+21:34:46 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.hi.or.ru.se.QuarkusRuntimeInitDialectFactory] (JPA Startup Thread) Persistence unit default-reactive: Could not retrieve the database version to check it is at least 12.0.0
+21:34:46 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) rest-heroes 1.0 native (powered by Quarkus 3.17.2) started in 0.091s. Listening on: http://0.0.0.0:8083
+21:34:46 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) Profile prod activated. 
+21:34:46 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) Installed features: [cdi, config-yaml, hibernate-orm, hibernate-reactive, hibernate-reactive-panache, hibernate-validator, kubernetes, micrometer, opentelemetry, qute, reactive-pg-client, rest, rest-jackson, rest-qute, smallrye-context-propagation, smallrye-health, smallrye-openapi, swagger-ui, vertx]
+2024-12-11 16:34:46.368521952 -0500
+2024-12-11 16:34:46.487580988
+First Response Time in ms: 119
+Footprint in MB:        : 104
+cd4b0136a5be224f1ff69db34e14a27580c5b7988fcd2678c34049dbafac14ab
+cd4b0136a5be224f1ff69db34e14a27580c5b7988fcd2678c34049dbafac14ab
+
+
+   ___                   _                ____                        _
+  / _ \ _   _  __ _ _ __| | ___   _ ___  / ___| _   _ _ __   ___ _ __| |__   ___ _ __ ___   ___  ___
+ | | | | | | |/ _` | '__| |/ / | | / __| \___ \| | | | '_ \ / _ \ '__| '_ \ / _ \ '__/ _ \ / _ \/ __|
+ | |_| | |_| | (_| | |  |   <| |_| \__ \  ___) | |_| | |_) |  __/ |  | | | |  __/ | | (_) |  __/\__ \
+  \__\_\\__,_|\__,_|_|  |_|\_\\__,_|___/ |____/ \__,_| .__/ \___|_|  |_| |_|\___|_|  \___/ \___||___/
+  _   _                                              |_|
+ | | | | ___ _ __ ___   ___  ___
+ | |_| |/ _ \ '__/ _ \ / _ \/ __|
+ |  _  |  __/ | | (_) |  __/\__ \
+ |_| |_|\___|_|  \___/ \___||___/
+
+
+                                                                            Powered by Quarkus 3.17.2
+21:34:59 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.ru.co.ConfigRecorder] (main) Build time property cannot be changed at runtime:
+ - %prod.quarkus.hibernate-orm.sql-load-script is set to 'no-file' but it is build time fixed to 'import.sql'. Did you change the property %prod.quarkus.hibernate-orm.sql-load-script after building the application?
+21:34:59 INFO  traceId=, parentId=, spanId=, sampled= [or.hi.re.pr.im.ReactiveIntegrator] (JPA Startup Thread) HR000001: Hibernate Reactive
+21:34:59 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@71d48362; Operation:Query.
+21:34:59 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@6b36ccf2; Failure: null.
+21:34:59 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@2ab89c64; Operation:Query.
+21:34:59 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@39c839cc; Failure: null.
+21:34:59 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@66a0302d; Operation:Query.
+21:34:59 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@736151ba; Failure: null.
+21:34:59 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.hi.or.ru.se.QuarkusRuntimeInitDialectFactory] (JPA Startup Thread) Persistence unit default-reactive: Could not retrieve the database version to check it is at least 12.0.0
+21:34:59 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) rest-heroes 1.0 native (powered by Quarkus 3.17.2) started in 0.090s. Listening on: http://0.0.0.0:8083
+21:34:59 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) Profile prod activated. 
+21:34:59 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) Installed features: [cdi, config-yaml, hibernate-orm, hibernate-reactive, hibernate-reactive-panache, hibernate-validator, kubernetes, micrometer, opentelemetry, qute, reactive-pg-client, rest, rest-jackson, rest-qute, smallrye-context-propagation, smallrye-health, smallrye-openapi, swagger-ui, vertx]
+2024-12-11 16:34:59.288496022 -0500
+2024-12-11 16:34:59.407542361
+First Response Time in ms: 119
+Footprint in MB:        : 106
+b5d969f98f716f5ddcc29dd8367de08229aaf9913c80f587622814f8ace32412
+b5d969f98f716f5ddcc29dd8367de08229aaf9913c80f587622814f8ace32412
+
+
+   ___                   _                ____                        _
+  / _ \ _   _  __ _ _ __| | ___   _ ___  / ___| _   _ _ __   ___ _ __| |__   ___ _ __ ___   ___  ___
+ | | | | | | |/ _` | '__| |/ / | | / __| \___ \| | | | '_ \ / _ \ '__| '_ \ / _ \ '__/ _ \ / _ \/ __|
+ | |_| | |_| | (_| | |  |   <| |_| \__ \  ___) | |_| | |_) |  __/ |  | | | |  __/ | | (_) |  __/\__ \
+  \__\_\\__,_|\__,_|_|  |_|\_\\__,_|___/ |____/ \__,_| .__/ \___|_|  |_| |_|\___|_|  \___/ \___||___/
+  _   _                                              |_|
+ | | | | ___ _ __ ___   ___  ___
+ | |_| |/ _ \ '__/ _ \ / _ \/ __|
+ |  _  |  __/ | | (_) |  __/\__ \
+ |_| |_|\___|_|  \___/ \___||___/
+
+
+                                                                            Powered by Quarkus 3.17.2
+21:35:12 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.ru.co.ConfigRecorder] (main) Build time property cannot be changed at runtime:
+ - %prod.quarkus.hibernate-orm.sql-load-script is set to 'no-file' but it is build time fixed to 'import.sql'. Did you change the property %prod.quarkus.hibernate-orm.sql-load-script after building the application?
+21:35:12 INFO  traceId=, parentId=, spanId=, sampled= [or.hi.re.pr.im.ReactiveIntegrator] (JPA Startup Thread) HR000001: Hibernate Reactive
+21:35:12 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@4281803c; Operation:Query.
+21:35:12 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@4677bc76; Failure: null.
+21:35:12 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@26ee35af; Operation:Query.
+21:35:12 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@3b988aec; Failure: null.
+21:35:12 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@3ebaad4; Operation:Query.
+21:35:12 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@1281284b; Failure: null.
+21:35:12 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.hi.or.ru.se.QuarkusRuntimeInitDialectFactory] (JPA Startup Thread) Persistence unit default-reactive: Could not retrieve the database version to check it is at least 12.0.0
+21:35:12 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) rest-heroes 1.0 native (powered by Quarkus 3.17.2) started in 0.092s. Listening on: http://0.0.0.0:8083
+21:35:12 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) Profile prod activated. 
+21:35:12 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) Installed features: [cdi, config-yaml, hibernate-orm, hibernate-reactive, hibernate-reactive-panache, hibernate-validator, kubernetes, micrometer, opentelemetry, qute, reactive-pg-client, rest, rest-jackson, rest-qute, smallrye-context-propagation, smallrye-health, smallrye-openapi, swagger-ui, vertx]
+2024-12-11 16:35:12.220189582 -0500
+2024-12-11 16:35:12.338417057
+First Response Time in ms: 118
+Footprint in MB:        : 102
+3716bdd66cbf66479833b8c3f6ae5f142b5af68b7d435efc87f6114db66abd5f
+3716bdd66cbf66479833b8c3f6ae5f142b5af68b7d435efc87f6114db66abd5f
+
+
+   ___                   _                ____                        _
+  / _ \ _   _  __ _ _ __| | ___   _ ___  / ___| _   _ _ __   ___ _ __| |__   ___ _ __ ___   ___  ___
+ | | | | | | |/ _` | '__| |/ / | | / __| \___ \| | | | '_ \ / _ \ '__| '_ \ / _ \ '__/ _ \ / _ \/ __|
+ | |_| | |_| | (_| | |  |   <| |_| \__ \  ___) | |_| | |_) |  __/ |  | | | |  __/ | | (_) |  __/\__ \
+  \__\_\\__,_|\__,_|_|  |_|\_\\__,_|___/ |____/ \__,_| .__/ \___|_|  |_| |_|\___|_|  \___/ \___||___/
+  _   _                                              |_|
+ | | | | ___ _ __ ___   ___  ___
+ | |_| |/ _ \ '__/ _ \ / _ \/ __|
+ |  _  |  __/ | | (_) |  __/\__ \
+ |_| |_|\___|_|  \___/ \___||___/
+
+
+                                                                            Powered by Quarkus 3.17.2
+21:35:25 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.ru.co.ConfigRecorder] (main) Build time property cannot be changed at runtime:
+ - %prod.quarkus.hibernate-orm.sql-load-script is set to 'no-file' but it is build time fixed to 'import.sql'. Did you change the property %prod.quarkus.hibernate-orm.sql-load-script after building the application?
+21:35:25 INFO  traceId=, parentId=, spanId=, sampled= [or.hi.re.pr.im.ReactiveIntegrator] (JPA Startup Thread) HR000001: Hibernate Reactive
+21:35:25 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@3b4921fc; Operation:Query.
+21:35:25 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@6a8ab76c; Failure: null.
+21:35:25 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@d6b468d; Operation:Query.
+21:35:25 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@65db696f; Failure: null.
+21:35:25 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@4c13983d; Operation:Query.
+21:35:25 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@2f783fce; Failure: null.
+21:35:25 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.hi.or.ru.se.QuarkusRuntimeInitDialectFactory] (JPA Startup Thread) Persistence unit default-reactive: Could not retrieve the database version to check it is at least 12.0.0
+21:35:25 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) rest-heroes 1.0 native (powered by Quarkus 3.17.2) started in 0.091s. Listening on: http://0.0.0.0:8083
+21:35:25 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) Profile prod activated. 
+21:35:25 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) Installed features: [cdi, config-yaml, hibernate-orm, hibernate-reactive, hibernate-reactive-panache, hibernate-validator, kubernetes, micrometer, opentelemetry, qute, reactive-pg-client, rest, rest-jackson, rest-qute, smallrye-context-propagation, smallrye-health, smallrye-openapi, swagger-ui, vertx]
+2024-12-11 16:35:25.152980204 -0500
+2024-12-11 16:35:25.273196030
+First Response Time in ms: 121
+Footprint in MB:        : 102
+efa5aa09986d3714c6b7ab91aa1c14bb40787247fbb8c7630ff6b60db6d84ae3
+efa5aa09986d3714c6b7ab91aa1c14bb40787247fbb8c7630ff6b60db6d84ae3
+
+
+   ___                   _                ____                        _
+  / _ \ _   _  __ _ _ __| | ___   _ ___  / ___| _   _ _ __   ___ _ __| |__   ___ _ __ ___   ___  ___
+ | | | | | | |/ _` | '__| |/ / | | / __| \___ \| | | | '_ \ / _ \ '__| '_ \ / _ \ '__/ _ \ / _ \/ __|
+ | |_| | |_| | (_| | |  |   <| |_| \__ \  ___) | |_| | |_) |  __/ |  | | | |  __/ | | (_) |  __/\__ \
+  \__\_\\__,_|\__,_|_|  |_|\_\\__,_|___/ |____/ \__,_| .__/ \___|_|  |_| |_|\___|_|  \___/ \___||___/
+  _   _                                              |_|
+ | | | | ___ _ __ ___   ___  ___
+ | |_| |/ _ \ '__/ _ \ / _ \/ __|
+ |  _  |  __/ | | (_) |  __/\__ \
+ |_| |_|\___|_|  \___/ \___||___/
+
+
+                                                                            Powered by Quarkus 3.17.2
+21:35:38 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.ru.co.ConfigRecorder] (main) Build time property cannot be changed at runtime:
+ - %prod.quarkus.hibernate-orm.sql-load-script is set to 'no-file' but it is build time fixed to 'import.sql'. Did you change the property %prod.quarkus.hibernate-orm.sql-load-script after building the application?
+21:35:38 INFO  traceId=, parentId=, spanId=, sampled= [or.hi.re.pr.im.ReactiveIntegrator] (JPA Startup Thread) HR000001: Hibernate Reactive
+21:35:38 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@52c3ed52; Operation:Query.
+21:35:38 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@3bf41816; Failure: null.
+21:35:38 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@5638fa73; Operation:Query.
+21:35:38 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@32258959; Failure: null.
+21:35:38 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@479f3942; Operation:Query.
+21:35:38 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@6f02dffc; Failure: null.
+21:35:38 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.hi.or.ru.se.QuarkusRuntimeInitDialectFactory] (JPA Startup Thread) Persistence unit default-reactive: Could not retrieve the database version to check it is at least 12.0.0
+21:35:38 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) rest-heroes 1.0 native (powered by Quarkus 3.17.2) started in 0.091s. Listening on: http://0.0.0.0:8083
+21:35:38 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) Profile prod activated. 
+21:35:38 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) Installed features: [cdi, config-yaml, hibernate-orm, hibernate-reactive, hibernate-reactive-panache, hibernate-validator, kubernetes, micrometer, opentelemetry, qute, reactive-pg-client, rest, rest-jackson, rest-qute, smallrye-context-propagation, smallrye-health, smallrye-openapi, swagger-ui, vertx]
+2024-12-11 16:35:38.054255356 -0500
+2024-12-11 16:35:38.169621036
+First Response Time in ms: 115
+Footprint in MB:        : 102
+dd65111808e5424b8769cdc07abca80fb12206629da03b5bc3505703e23680d2
+dd65111808e5424b8769cdc07abca80fb12206629da03b5bc3505703e23680d2
+
+
+   ___                   _                ____                        _
+  / _ \ _   _  __ _ _ __| | ___   _ ___  / ___| _   _ _ __   ___ _ __| |__   ___ _ __ ___   ___  ___
+ | | | | | | |/ _` | '__| |/ / | | / __| \___ \| | | | '_ \ / _ \ '__| '_ \ / _ \ '__/ _ \ / _ \/ __|
+ | |_| | |_| | (_| | |  |   <| |_| \__ \  ___) | |_| | |_) |  __/ |  | | | |  __/ | | (_) |  __/\__ \
+  \__\_\\__,_|\__,_|_|  |_|\_\\__,_|___/ |____/ \__,_| .__/ \___|_|  |_| |_|\___|_|  \___/ \___||___/
+  _   _                                              |_|
+ | | | | ___ _ __ ___   ___  ___
+ | |_| |/ _ \ '__/ _ \ / _ \/ __|
+ |  _  |  __/ | | (_) |  __/\__ \
+ |_| |_|\___|_|  \___/ \___||___/
+
+
+                                                                            Powered by Quarkus 3.17.2
+21:35:51 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.ru.co.ConfigRecorder] (main) Build time property cannot be changed at runtime:
+ - %prod.quarkus.hibernate-orm.sql-load-script is set to 'no-file' but it is build time fixed to 'import.sql'. Did you change the property %prod.quarkus.hibernate-orm.sql-load-script after building the application?
+21:35:51 INFO  traceId=, parentId=, spanId=, sampled= [or.hi.re.pr.im.ReactiveIntegrator] (JPA Startup Thread) HR000001: Hibernate Reactive
+21:35:51 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@4ee1c7b6; Operation:Query.
+21:35:51 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@77a1d6b5; Failure: null.
+21:35:51 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@69b3bcda; Operation:Query.
+21:35:51 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@13734bd5; Failure: null.
+21:35:51 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.sqlclient.impl.tracing.QueryRequest@436ed97b; Operation:Query.
+21:35:51 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.op.ru.tr.in.ve.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.sqlclient.impl.RowSetImpl@4fcf4b58; Failure: null.
+21:35:51 WARN  traceId=, parentId=, spanId=, sampled= [io.qu.hi.or.ru.se.QuarkusRuntimeInitDialectFactory] (JPA Startup Thread) Persistence unit default-reactive: Could not retrieve the database version to check it is at least 12.0.0
+21:35:51 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) rest-heroes 1.0 native (powered by Quarkus 3.17.2) started in 0.090s. Listening on: http://0.0.0.0:8083
+21:35:51 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) Profile prod activated. 
+21:35:51 INFO  traceId=, parentId=, spanId=, sampled= [io.quarkus] (main) Installed features: [cdi, config-yaml, hibernate-orm, hibernate-reactive, hibernate-reactive-panache, hibernate-validator, kubernetes, micrometer, opentelemetry, qute, reactive-pg-client, rest, rest-jackson, rest-qute, smallrye-context-propagation, smallrye-health, smallrye-openapi, swagger-ui, vertx]
+2024-12-11 16:35:50.981387276 -0500
+2024-12-11 16:35:51.101451491
+First Response Time in ms: 120
+Footprint in MB:        : 104
+d2d1926fbd26ac3bd2431c992966050d6b7ee479bb1f29abb0ae38bcb6e635fa
+d2d1926fbd26ac3bd2431c992966050d6b7ee479bb1f29abb0ae38bcb6e635fa
