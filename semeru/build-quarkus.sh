@@ -1,4 +1,5 @@
 #!/bin/bash
+cd "$(dirname "$0")"
 
 cd ../grpc-locations
 ./mvnw -f pom.xml clean package -Dmaven.test.skip

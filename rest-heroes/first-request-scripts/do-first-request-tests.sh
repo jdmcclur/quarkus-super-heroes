@@ -1,18 +1,17 @@
 #!/bin/bash
 #set -eux
 
-declare -r IMAGE=${1}
+IMAGE=${1}
 NUM_CPUS=${2}
 DB_IP=${3}
 
 echo "Testing ${IMAGE}"
 
-
-for i in 1 2 3 4 5 6 7 8 9 10
+for i in $(seq 1 20);
 do
   sleep 2
 
-  ./loop.sh pingperf &
+  ./loop.sh &
 
   echo $CPUS
   CID=$(podman run --rm --privileged -d --memory=1g --cpus ${NUM_CPUS} --net myNetwork --ip 192.168.200.20 -p 8083:8083 \

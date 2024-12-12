@@ -14,13 +14,8 @@ do
   ./loop.sh &
 
   echo $CPUS
-  CID=$(podman run --rm --privileged -d --memory=1g --cpus ${NUM_CPUS} --net myNetwork --ip 192.168.200.21 -p 8084:8084 \
-      -e QUARKUS_DATASOURCE_JDBC_URL=jdbc:postgresql://${DB_IP}:5432/villains_database \
-      -e QUARKUS_HIBERNATE_ORM_DATABASE_GENERATION=validate \
-      -e QUARKUS_DATASOURCE_USERNAME=superbad \
-      -e QUARKUS_DATASOURCE_PASSWORD=superbad \
-      -e QUARKUS_HIBERNATE_ORM_SQL_LOAD_SCRIPT=no-file \
-      -e QUARKUS_OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://otel-collector:4317 ${IMAGE})
+  CID=$(podman run --rm --privileged -d --memory=1g --cpus ${NUM_CPUS} --net myNetwork --ip 192.168.200.23 -p 8087:8087 \
+  -e QUARKUS_OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://otel-collector:4317 ${IMAGE})
   sleep 5
   podman logs ${CID}
 
